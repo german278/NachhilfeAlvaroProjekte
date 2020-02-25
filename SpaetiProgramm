@@ -1,0 +1,40 @@
+package KonsolenProgramm;
+
+import java.util.Scanner;
+
+public class HauptKauf {
+
+
+    void spatiProgramm(){
+
+        String[] produkte = {"Marlboro Rot", "Marlboro Gold", "Parliament"};
+        double[] preis = {7.00, 7.00,7.00};
+        boolean imKauf = true;
+
+
+        do {
+                System.out.println("Geben Sie ein was Sie haben mochten");
+                Scanner warenEingabe = new Scanner(System.in);
+
+                if (warenEingabe.equals(produkte[0])){
+                    System.out.println("Sie bekommen " + produkte[0] + " und bezahlen " + preis[0] + " Euro");
+                    //muss noch funktion mit dem Bezahlvorgang
+                    imKauf = true;
+                }else if(warenEingabe.equals(produkte[1])){
+                    System.out.println("Sie bekommen " + produkte[1] + " und bezahlen " + preis[1] + " Euro");
+                    //muss noch funktion mit dem Bezahlvorgang
+                    imKauf = false;
+                }else if(warenEingabe.equals(produkte[2])){
+                    System.out.println("Sie bekommen " + produkte[2] + " und bezahlen " + preis[2] + " Euro");
+                    //muss noch funktion mit dem Bezahlvorgang
+                    imKauf = false;
+                }
+        }while (imKauf);
+
+
+
+
+    }
+
+
+}
